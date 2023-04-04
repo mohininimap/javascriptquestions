@@ -200,4 +200,92 @@ const findPair = (arr) => {
   const arr1 = [80, 60, 10, 50, 30, 100, 0, 50];
   console.log(findPair(arr1));
   
+//   -------------------------------
+
+// function sumPair(arr1){
+//     let pair=[];
+//     for(let i=0;i<arr1.length;i++){
+//         for(let j=i+1;j<arr1.length;j++){
+//           if(arr1[i]+arr1[j]===100){
+//             pair.push([arr1[i],arr1[j]])
+//           }
+//         }
+      
+//     } 
+//     return pair;
+// }
+// let arr = [80, 60, 10, 50, 30, 100, 0, 50];
+
+// console.log(sumPair(arr))
+
+// -------------------
+// Removing duplicates indexOf method
+// const arry = [80, 60, 10, 50, 30,30, 100, 0, 50];
+// // console.log(arry.indexOf(50))
+// var k=arry.filter((item,i)=>arry.indexOf(item)!==i)
+// console.log(k)
+// ---------------
+
+// Remove duplicates I2 method includes
+// const arry = [80, 60, 10, 50, 30,30,50,60, 100, 0, 50];
+// let uniqueelement=[];
+// function remDuplicate(){
+//  arry.map((element)=>{
+//         if(!uniqueelement.includes(element)){
+//             uniqueelement.push(element) 
+//         }
+//     }) 
+//     return uniqueelement;
+// }
+
+// console.log(remDuplicate())
+
+// -------------- 
+// Without Recursion method fibonacci Series
+function fib(num){
+    let series=[];
+    series[0]=0;
+    series[1]=1;
+
+    for(let i=series.length;i<=num;i++){
+     series.push(series[series.length-1]+series[series.length-2])
+    }
+    return series;
+ }
+
+ console.log(fib(5))
+// ---------------------------------
+
+
+//  -----------------------
+// 10. Code to find even numbers in a list
+
+ function getEvenNumbers() {
+    var arr = [4,5,7,8,14,45,76];
+    
+    var evens = arr.filter(number => number % 2 == 0);
+    document.write('Even Numbers: ' + evens);
+}
+
+getEvenNumbers();
+
+// -------------
+// Find prime numbers from 1 ....n 
+
+let count=0
+let i,j 
+for(j=2;j<=5;j++)
+{
+for( i=1;i<=j;i++)
+{
+  if(j%i==0)
+  count++
   
+}
+
+if(count==2)
+
+console.log(j)
+count=0
+
+}
